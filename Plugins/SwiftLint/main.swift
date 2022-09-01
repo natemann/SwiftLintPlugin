@@ -23,6 +23,7 @@ struct SwiftLintPlugin: BuildToolPlugin {
                     "--path",
                     target.directory.string,
                     "--config",
+                    "--fix",
                     "\(context.package.directory.string)/.swiftlint.yml"
                 ],
                 environment: [:]
